@@ -82,7 +82,7 @@ cd 3d-to-gltf-converter
 
 -Call the file path:
 
-`cd C:\Doginals-main\Dogemap-Dogs`
+`cd C:\Doginals-main\Doge-Art`
 
 -Execute the script using the following command:
 
