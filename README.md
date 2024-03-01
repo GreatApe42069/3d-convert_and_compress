@@ -20,7 +20,9 @@ This Python script is designed to convert various 3D file formats (e.g., .obj, .
 -Create a file named `requirements.txt` in the root directory of your project and Add the following lines to specify the required Python packages and their versions:
 
 tripy
+
 Pillow==8.4.0
+
 imageio==2.14.0
 
 
