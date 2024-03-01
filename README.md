@@ -23,7 +23,7 @@ This Python script is designed to convert various 3D file formats (e.g., .obj, .
 
 
 tripy
-Pillow==8.4.0
+Pillow==10.2.0
 imageio==2.14.0
 
 
@@ -87,9 +87,9 @@ cd 3d-to-gltf-converter
 Open the 3d-convert_and_compress.py file and update the input_folder and output_folder variables with the appropriate paths.
 Run the Script:
 
-**Call the file path of your project:**
+**Call your file path:**
 
-cd C:\Doginals-main\Doge-Art
+`cd C:\Doginals-main\Doge-Art`
 
 **Execute the script using the following command:**
 
