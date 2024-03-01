@@ -6,15 +6,15 @@ def convert_to_gltf(input_file, output_file):
     try:
         # Redirect subprocess output to a file
         with open('conversion_log.txt', 'a') as log_file:
-            subprocess.run(["gltfpack", "-i", input_file, "-o", output_file, "-c", "-tc", "-si", "0.5"], stdout=log_file, stderr=log_file)
+            subprocess.run(["npx", "gltfpack", "-i", input_file, "-o", output_file], stdout=log_file, stderr=log_file)
     except subprocess.CalledProcessError as e:
         print(f"Error converting {input_file} to gltf: {e}")
     else:
         print("Conversion complete")
 
 def main():
-    input_folder = r"C:\Doginals-main\Doge-Art"  # Set your projects input folder here
-    output_folder = r"C:\Doginals-main\Doge-Art\Converted"  # Set your projects output folder here
+    input_folder = r"C:\Doginals-main\Dogemap-Dogs"  # Set your input folder here
+    output_folder = r"C:\Doginals-main\Dogemap-Dogs\Converted"  # Set your output folder here
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -24,7 +24,9 @@ def main():
             input_path = os.path.join(input_folder, file)
             output_path = os.path.join(output_folder, os.path.splitext(file)[0] + ".gltf")
 
+            print(f"Processing: {input_path}")
             convert_to_gltf(input_path, output_path)
+            print(f"Conversion of {input_path} complete")
 
 if __name__ == "__main__":
     main()
