@@ -13,8 +13,8 @@ def convert_to_gltf(input_file, output_file):
         print("Conversion complete")
 
 def main():
-    input_folder = r"C:\Doginals-main\Dogemap-Dogs"  # Set your input folder here
-    output_folder = r"C:\Doginals-main\Dogemap-Dogs\Converted"  # Set your output folder here
+    input_folder = r"C:\Doginals-main\Doge-Art"  # Set your input folder here
+    output_folder = r"C:\Doginals-main\Doge-Art\Converted"  # Set your output folder here
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
