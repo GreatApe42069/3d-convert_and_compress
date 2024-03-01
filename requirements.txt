@@ -1,0 +1,3 @@
+tripy
+Pillow==8.4.0
+imageio==2.14.0
