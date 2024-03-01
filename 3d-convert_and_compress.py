@@ -5,8 +5,8 @@ def convert_to_gltf(input_file, output_file):
     subprocess.run(["gltfpack", "-i", input_file, "-o", output_file])
 
 def main():
-    input_folder = "C:\Doginals-main\Dogemap-Dogs"  # Set your input folder here
-    output_folder = "C:\Doginals-main\Dogemap-Dogs\Converted"  # Set your output folder here
+    input_folder = "C:\Doginals-main\Ape-srtact-Apes"  # Set your input folder here
+    output_folder = "C:\Doginals-main\Ape-srtact-Apes\Converted"  # Set your output folder here
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
