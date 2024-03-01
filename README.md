@@ -33,7 +33,21 @@ imageio==2.14.0
 
 
 
-**GLTFPack:**
+# GLTFPack:
+## Installing
+
+meshoptimizer is hosted on GitHub; you can download the latest release using git:
+
+git clone -b v0.20 https://github.com/zeux/meshoptimizer.git
+Alternatively you can download the .zip archive from GitHub.
+
+-The library is also available as a package (ArchLinux, Debian, Ubuntu, Vcpkg).
+
+## Installing gltfpack:
+
+gltfpack is a CLI tool for optimizing meshes using meshoptimizer.
+
+You can download a pre-built binary for gltfpack on Releases page, or install npm package. Native binaries are recommended over npm since they can work with larger files, run faster, and support texture compression.
 
 -Command For Linux:
 
@@ -44,8 +58,11 @@ imageio==2.14.0
 `brew install gltfpack`
 
 **For Windows:**
+-If you have nod.js run command:
 
--Download the executable from the official GitHub releases page:
+`npm i gltfpack`
+
+-Or Download the executable from the official GitHub releases page:
 
 `https://github.com/zeux/meshoptimizer/releases`
 
