@@ -11,18 +11,15 @@ This Python script is designed to convert various 3D file formats (e.g., .obj, .
 - Pip
 - GLTFPack (Installation details provided below)
 
+## Installing Dependencies
 
-
-# Installing Dependencies
-
-
-## Python Dependencies:
+# Python Dependencies:
 
 **Create a `requirements.txt` file:**
 
 -Create a file named `requirements.txt` in the root directory of your project and Add the following lines to specify the required Python packages and their versions:
 
-tripy==0.3
+tripy
 Pillow==8.4.0
 imageio==2.14.0
 
@@ -33,21 +30,7 @@ imageio==2.14.0
 
 
 
-# GLTFPack:
-## Installing
-
-meshoptimizer is hosted on GitHub; you can download the latest release using git:
-
-git clone -b v0.20 https://github.com/zeux/meshoptimizer.git
-Alternatively you can download the .zip archive from GitHub.
-
--The library is also available as a package (ArchLinux, Debian, Ubuntu, Vcpkg).
-
-## Installing gltfpack:
-
-gltfpack is a CLI tool for optimizing meshes using meshoptimizer.
-
-You can download a pre-built binary for gltfpack on Releases page, or install npm package. Native binaries are recommended over npm since they can work with larger files, run faster, and support texture compression.
+**GLTFPack:**
 
 -Command For Linux:
 
@@ -58,13 +41,28 @@ You can download a pre-built binary for gltfpack on Releases page, or install np
 `brew install gltfpack`
 
 **For Windows:**
--If you have nod.js run command:
 
-`npm i gltfpack`
+For Windows If you have nod.js run command:
+
+-Run the following command to install gltfpack locally in your project:
+
+`npm install gltfpack`
+
+-After the installation is complete, try running gltfpack from the local node modules:
+
+`npx gltfpack --version`
+
+***The npx command ensures that you're using the locally installed version of gltfpack.***
+
+-If Error (Unrecognized option --version)
+Run the following command to execute gltfpack without any options. This should output information about the available commands and the version as well:
+
+`npx gltfpack`
+
 
 -Or Download the executable from the official GitHub releases page:
 
-`https://github.com/zeux/meshoptimizer/releases`
+https://github.com/zeux/meshoptimizer/releases
 
 
 # Usage:
@@ -76,9 +74,13 @@ cd 3d-to-gltf-converter
 
 -Set up Input and Output Folders:
 
-***Open the `3d-convert_and_compress.py` file and update the `input_folder` and `output_folder` variables with the appropriate paths.***
+***Open the 3d-convert_and_compress.py file and update the input_folder and output_folder variables with the appropriate paths.***
 
 **Run the Script:**
+
+-Call the file path:
+
+`cd C:\Doginals-main\Dogemap-Dogs`
 
 -Execute the script using the following command:
 
@@ -87,7 +89,7 @@ cd 3d-to-gltf-converter
 
 ***This script will convert all supported 3D files in the input folder to GLTF and save them in the output folder.***
 
-## Additional Notes:
+# Additional Notes:
 
 -Ensure that your 3D files are located in the specified input folder.
 
