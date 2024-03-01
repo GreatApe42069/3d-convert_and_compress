@@ -18,15 +18,16 @@ def main():
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
+        print(f"Created output folder: {output_folder}")
 
     for file in os.listdir(input_folder):
-        if file.endswith((".obj", ".fbx", ".usdz", ".glb")):
+        if file.lower().endswith((".obj", ".fbx", ".usdz", ".glb", ".mp4", ".png")):
             input_path = os.path.join(input_folder, file)
             output_path = os.path.join(output_folder, os.path.splitext(file)[0] + ".gltf")
 
             print(f"Processing: {input_path}")
             convert_to_gltf(input_path, output_path)
-            print(f"Conversion of {input_path} complete")
+            print(f"Conversion of {input_path} complete. Output: {output_path}")
 
 if __name__ == "__main__":
     main()
