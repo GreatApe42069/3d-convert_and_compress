@@ -89,7 +89,7 @@ Run the Script:
 
 **Call your file path:**
 
-`cd C:\Doginals-main\Doge-Art`
+`cd C:\Doginals-main\Dogemap-Art`
 
 **Execute the script using the following command:**
 
