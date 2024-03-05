@@ -39,12 +39,12 @@ imageio==2.14.0
 `sudo apt-get install -y gltfpack`
 
 
-#### Command For macOS (using Homebrew):
+####Command For macOS (using Homebrew):
 
 `brew install gltfpack`
 
 
-#### For Windows:
+####For Windows:
 **If you have Node.js, run the following command:**
 
 `npm install gltfpack`
@@ -87,17 +87,26 @@ cd 3d-to-gltf-converter
 Open the 3d-convert_and_compress.py file and update the input_folder and output_folder variables with the appropriate paths.
 Run the Script:
 
-**Call your file path:**
+**Call the file path:**
 
-`cd C:\Doginals-main\Dogemap-Art`
+cd C:\Doginals-main\Dogemap-Art
 
 **Execute the script using the following command:**
 
+Version 1 Outputs 2 Files (.gltf, .bin):
+
 `C:\Python312\python.exe .\3d-convert_and_compress.py`
+
+Version 2 Outputs 1 file (.gltf):
+
+`C:\Python312\python.exe .\3d-convert_and_compress1file.py`
 
 This script will convert all supported 3D files in the input folder to GLTF and save them in the output folder.
 
 ## Additional Notes:
+
+If encountering error calling python download and repair python, fixes this
+
 Ensure that your 3D files are located in the specified input folder.
 
 The script uses the gltfpack tool for compression.
@@ -106,4 +115,4 @@ Adjust the parameters within the script or experiment with gltfpack options for 
 
 Feel free to modify the script based on your specific needs or contribute to its improvement.
 
-# Happy converting!
+Happy converting!
