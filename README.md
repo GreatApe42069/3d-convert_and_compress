@@ -59,6 +59,11 @@ imageio==2.14.0
 
 `npx gltfpack`
 
+Or Find the global bin directory where npm installs global packages. You can check the npm configuration by running:
+
+`npm bin -g`
+
+
 -Alternatively, download the executable from the official GitHub releases page:
 
 https://github.com/zeux/meshoptimizer/releases
@@ -87,9 +92,27 @@ cd 3d-to-gltf-converter
 Open the 3d-convert_and_compress.py file and update the input_folder and output_folder variables with the appropriate paths.
 Run the Script:
 
+* Note sometimes you need to do the following steps:
+
+Open PowerShell as an administrator. Right-click on the PowerShell icon and choose "Run as administrator."
+
+Run the following command to check the current execution policy:
+
+`Get-ExecutionPolicy`
+
+If the output is "Restricted," you can change it to "RemoteSigned" by running the following command:
+
+Set-ExecutionPolicy RemoteSigned
+Confirm with 'Y' if prompted.
+
+Now, try activating the virtual environment again this steps required:
+
+`.\venv\Scripts\Activate` *
+
+
 **Call the file path:**
 
-cd C:\Doginals-main\Dogemap-Art
+cd C:\Doginals-main\Dogemap-Dogs
 
 **Execute the script using the following command:**
 
@@ -100,6 +123,9 @@ Version 1 Outputs 2 Files (.gltf, .bin):
 Version 2 Outputs 1 file (.gltf):
 
 `C:\Python312\python.exe .\3d-convert_and_compress1file.py`
+or
+`C:\Python312\python .\3d-convert_and_compress1file.py`
+
 
 This script will convert all supported 3D files in the input folder to GLTF and save them in the output folder.
 
