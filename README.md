@@ -141,4 +141,4 @@ Adjust the parameters within the script or experiment with gltfpack options for 
 
 Feel free to modify the script based on your specific needs or contribute to its improvement.
 
-Happy converting!
+# Happy converting!
